@@ -1,5 +1,4 @@
-#
-Install Java
+#Install Java
 sudo apt-get install default-jre -y
 
 #Install Maven
