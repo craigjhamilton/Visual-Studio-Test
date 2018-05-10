@@ -33,7 +33,7 @@ echo "rest.port=8084"
 #Update the twitter connector properties file
 cd /home/craig/kafka-connect-twitter
 sed -i '/topic=test/c\topic=twitter' twitter-source.properties
-sed -i '/twitter.consumerkey=/c\twitter.consumerkey=' twitter-source.properties
+sed -i '/twitter.consumerkey=/c\twitter.consumerkey=OyXUL6QBXa7e0Tq4oJrXQkZkl' twitter-source.properties
 sed -i '/twitter.consumersecret=/c\twitter.consumersecret=SxYRuZYBnxb9QUGgKTe7iPOKeP9MEaDjMyc2cYjIMgcysE6a0c' twitter-source.properties
 sed -i '/twitter.token=/c\twitter.token=717291305580126208-8u5eUBnXWmqMSrGpQ457UFNlmHCc3tG' twitter-source.properties
 sed -i '/twitter.secret=/c\twitter.secret=hmZfo0GbLdTfv1dHnPlSAQ1zpJOJ6mqCA2nSt2VozWpm2' twitter-source.properties
