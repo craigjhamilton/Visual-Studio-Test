@@ -29,7 +29,7 @@ sudo mv /home/craig/kafka-connect-twitter/target /usr/local/share/kafka/plugins/
 echo "#Set the plugin path" >> /home/craig/kafka-connect-twitter/connect-source-standalone.properties 
 echo "plugin.path=/usr/local/share/kafka/plugins/kafka-connect-twitter" >> /home/craig/kafka-connect-twitter/connect-source-standalone.properties
 echo "#Set the REST API port" >> /home/craig/kafka-connect-twitter/connect-source-standalone.properties
-echo "rest.port=8084"
+echo "rest.port=8084" >> /home/craig/kafka-connect-twitter/connect-source-standalone.properties
 
 #Update the twitter connector properties file
 cd /home/craig/kafka-connect-twitter
