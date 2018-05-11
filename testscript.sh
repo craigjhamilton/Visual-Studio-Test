@@ -15,6 +15,7 @@ confluent start
 
 #Install GIT and Clone GIT repo with Kafka Twitter Connector
 sudo apt-get -y install git
+cd /home/craig
 git clone https://github.com/Eneco/kafka-connect-twitter.git
 
 #Build the Jar files
