@@ -1,19 +1,19 @@
--y #Install Java
-sudo apt-get install default-jre -y
+s-y #Install Java
+sudo apt-get -y install default-jre 
 
 #Install Maven
-sudo apt install maven -y
+sudo apt-get -y install maven
 
 #Install Confluent Open Source Platform
 wget -qO - https://packages.confluent.io/deb/4.0/archive.key  | sudo apt-key add - 
 sudo add-apt-repository "deb [arch=amd64] https://packages.confluent.io/deb/4.0  stable main"
-sudo apt-get install confluent-platform-oss-2.11 -y && sudo apt-get -y update 
+sudo apt-get -y install confluent-platform-oss-2.11 && sudo apt-get -y update 
 
 #Start the Confluent Platform
 confluent start
 
 #Install GIT and Clone GIT repo with Kafka Twitter Connector
-sudo apt-get install git
+sudo apt-get -y install git
 git clone https://github.com/Eneco/kafka-connect-twitter.git
 
 #Build the Jar files
