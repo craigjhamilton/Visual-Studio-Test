@@ -8,7 +8,7 @@ sudo apt-get -y install maven
 #Install Confluent Open Source Platform
 wget -qO - https://packages.confluent.io/deb/4.0/archive.key  | sudo apt-key add - 
 sudo add-apt-repository "deb [arch=amd64] https://packages.confluent.io/deb/4.0  stable main"
-sudo apt-get -y install confluent-platform-oss-2.11 && sudo apt-get -y update 
+sudo apt-get -y update && sudo apt-get -y install confluent-platform-oss-2.11
 
 #Start the Confluent Platform
 confluent start
