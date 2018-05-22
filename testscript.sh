@@ -1,5 +1,5 @@
 #!/bin/bash
-#Give the user right to the /tmp folder
+#Give the user right to the tmp folder
 sudo chmod -R 777 /tmp
 
 #Install Java
