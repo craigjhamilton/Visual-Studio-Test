@@ -1,4 +1,7 @@
 #!/bin/bash
+#Give the user right to the /tmp folder
+sudo chmod -R 777 /tmp
+
 #Install Java
 sudo apt-get -y install default-jre 
 
@@ -11,7 +14,7 @@ sudo add-apt-repository "deb [arch=amd64] https://packages.confluent.io/deb/4.0 
 sudo apt-get -y update && sudo apt-get -y install confluent-platform-oss-2.11
 
 #Start the Confluent Platform
-sudo confluent start
+confluent start
 
 #Install GIT and Clone GIT repo with Kafka Twitter Connector
 sudo apt-get -y install git
