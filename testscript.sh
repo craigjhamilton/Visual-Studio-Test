@@ -42,8 +42,8 @@ sed -i '/twitter.consumerkey=/c\twitter.consumerkey=OyXUL6QBXa7e0Tq4oJrXQkZkl' t
 sed -i '/twitter.consumersecret=/c\twitter.consumersecret=SxYRuZYBnxb9QUGgKTe7iPOKeP9MEaDjMyc2cYjIMgcysE6a0c' twitter-source.properties
 sed -i '/twitter.token=/c\twitter.token=717291305580126208-8u5eUBnXWmqMSrGpQ457UFNlmHCc3tG' twitter-source.properties
 sed -i '/twitter.secret=/c\twitter.secret=hmZfo0GbLdTfv1dHnPlSAQ1zpJOJ6mqCA2nSt2VozWpm2' twitter-source.properties
-sed -i '/# track.terms=news,music,hadoop,clojure,scala,fp,golang,python,fsharp,cpp,java/c\# track.terms=scala,databricks,java,kafka' twitter-source.properties
-sed -i '/# language=en,ru,de/c\# language=en' twitter-source.properties
+sed -i '/# track.terms=news,music,hadoop,clojure,scala,fp,golang,python,fsharp,cpp,java/c\track.terms=scala,databricks,java,kafka' twitter-source.properties
+sed -i '/# language=en,ru,de/c\language=en' twitter-source.properties
 
 #Create the Kafka topic to write to 
 cd /usr/bin
